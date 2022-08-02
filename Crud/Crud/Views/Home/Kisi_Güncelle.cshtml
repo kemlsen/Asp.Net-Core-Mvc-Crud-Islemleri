@@ -1,0 +1,13 @@
+﻿@model Crud.Models.Kisiler
+@{
+    ViewData["Title"] = "Kisi_Güncelle";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Kişi Güncelleme</h1>
+<form asp-action="Kisi_Güncelle" method="post">
+    <input type="hidden" asp-for="Kisi_ID"/>
+    <input class="form-control" asp-for="Kisi_FullName"/>
+    <button class="btn btn-info" type="submit">Kişi Güncelle</button>
+</form>
+
